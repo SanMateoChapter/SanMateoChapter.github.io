@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 	<link rel = "icon" href = 
@@ -13,38 +13,65 @@
             margin: 0;
             width: 100%;
             height: 100%;
-            font-family: Arial;
+            font-family: Arial, Helvetica, sans-serif;
+			color: white;
         }
-        #dialogText {
-
-            color: white;
-
-        }
-        
+		
         #dialogWrap {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-
-
+            display: table;
+            background-color: #151515;
+			padding-top: 35px;
         }
+		
         
         #dialogWrapCell {
-          
             text-align: center;
-            vertical-align: middle;
+			border-top: 50px;
+			height: 100%;
         }
-        #pass{
-			margin-top: 10px;
-			font-size: 18px;
-
+        
+        #mainDialog {
+			padding-top: 10px;
+            max-width: 400px;
+            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #252525;
+            overflow: hidden;
+            text-align: left;
+			padding: none;
+			margin-top: 20px;
+			border-radius: 7px;
+			border: solid 2px #303030;
+        }
+        #passArea {
+            padding: 20px 30px;
+            background-color: #252525;
         }
         #passArea > * {
             margin: 5px auto;
         }
-
+        #pass {
+            width: 100%;
+            height: 25px;
+            font-size: 15px;
+			color: white;
+			padding-left: 5px;
+			background-color: #171717;
+			border: solid 2px #303030;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
         .notifyText {
             display: none;
         }
@@ -56,18 +83,47 @@
         #success {
             color: green;
         }
-
-
+        
+        #submitPass {
+            font-size: 15px;
+            background-color: #FF5353;
+            border: none gray 1px;
+            float: right;
+			border-radius: 5px;
+			color: white;
+			padding: 5px;
+        }
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+		input {
+			border:minimal;
+			border-radius: 10px;
+		}
+		p {
+			font-size: 25px;
+		}
+		#passwordPrompt {
+			font-size: 15px;
+		}
     </style>
   </head>
   <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen width="100%" height="100%"></iframe>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen ></iframe>
+	
+	
+        <div id="dialogWrapCell">		
     <div id="dialogWrap">
-        <div id="dialogWrapCell">
+	<center><img width="50px;" height="50px" align="middle" src="logo.svg"></center>
+	<p>Enter Password to Continue</p>
             <div id="mainDialog">
-                <div id="dialogText"><input id="pass" type="password" name="pass" autofocus placeholder="Enter Password"></div>
                 <div id="passArea">
-                    
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
@@ -81,7 +137,6 @@
             </div>
         </div>
     </div>
-   </style>
     <script>
 var CryptoJS=CryptoJS||function(u,p){var d={},l=d.lib={},s=function(){},t=l.Base={extend:function(a){s.prototype=this;var c=new s;a&&c.mixIn(a);c.hasOwnProperty("init")||(c.init=function(){c.$super.init.apply(this,arguments)});c.init.prototype=c;c.$super=this;return c},create:function(){var a=this.extend();a.init.apply(a,arguments);return a},init:function(){},mixIn:function(a){for(var c in a)a.hasOwnProperty(c)&&(this[c]=a[c]);a.hasOwnProperty("toString")&&(this.toString=a.toString)},clone:function(){return this.init.prototype.extend(this)}},
 r=l.WordArray=t.extend({init:function(a,c){a=this.words=a||[];this.sigBytes=c!=p?c:4*a.length},toString:function(a){return(a||v).stringify(this)},concat:function(a){var c=this.words,e=a.words,j=this.sigBytes;a=a.sigBytes;this.clamp();if(j%4)for(var k=0;k<a;k++)c[j+k>>>2]|=(e[k>>>2]>>>24-8*(k%4)&255)<<24-8*((j+k)%4);else if(65535<e.length)for(k=0;k<a;k+=4)c[j+k>>>2]=e[k>>>2];else c.push.apply(c,e);this.sigBytes+=a;return this},clamp:function(){var a=this.words,c=this.sigBytes;a[c>>>2]&=4294967295<<
