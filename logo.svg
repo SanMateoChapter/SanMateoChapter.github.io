@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="169mm"
-   height="169mm"
-   viewBox="0 0 169 169"
+   width="170mm"
+   height="170mm"
+   viewBox="0 0 170 170"
    version="1.1"
    id="svg8"
    sodipodi:docname="officerlogo.svg"
@@ -28,9 +28,9 @@
      inkscape:window-height="705"
      id="namedview77"
      showgrid="false"
-     inkscape:zoom="0.59558405"
-     inkscape:cx="269.15463"
-     inkscape:cy="308.09431"
+     inkscape:zoom="0.42114152"
+     inkscape:cx="133.44528"
+     inkscape:cy="263.31192"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -249,7 +249,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -258,12 +258,12 @@
     <circle
        style="fill:#fc8721;fill-opacity:0;stroke-width:0.264583"
        id="path40"
-       cx="84.326965"
-       cy="23.700903"
+       cx="83.882721"
+       cy="22.81242"
        r="0" />
     <g
        id="g122"
-       transform="translate(0.63901315,1.4873422)">
+       transform="translate(0.19477136,0.59885861)">
       <circle
          style="fill:#facf0c;fill-opacity:1;stroke-width:0.264583"
          id="path268"
@@ -317,7 +317,7 @@
     </g>
     <g
        id="g99"
-       transform="translate(0.63937315,1.4870822)">
+       transform="translate(0.19513136,0.59859861)">
       <circle
          style="fill:url(#linearGradient1687);fill-opacity:1;stroke-width:0.264583"
          id="path268-7-4"
@@ -375,18 +375,18 @@
     <circle
        style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.326355;stroke-opacity:0.0200803"
        id="path1552-6"
-       cx="84.5"
-       cy="90.850006"
+       cx="84.055756"
+       cy="89.961525"
        r="51.336823" />
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.269321;stroke-opacity:0.0200803"
        id="path1552"
-       cx="84.5"
-       cy="90.850006"
+       cx="84.055756"
+       cy="89.961525"
        r="42.365341" />
     <g
        id="g87"
-       transform="translate(-0.29943888,-3.0856786)">
+       transform="translate(-0.74368067,-3.9741622)">
       <rect
          style="fill:#080808;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:0.0200803"
          id="rect1470"
