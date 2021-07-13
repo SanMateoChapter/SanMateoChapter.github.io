@@ -28,13 +28,14 @@
      inkscape:window-height="705"
      id="namedview77"
      showgrid="false"
-     inkscape:zoom="0.59558405"
-     inkscape:cx="91.801843"
-     inkscape:cy="347.9523"
+     inkscape:zoom="0.84228304"
+     inkscape:cx="282.80749"
+     inkscape:cy="355.92805"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0" />
   <defs
      id="defs2">
     <linearGradient
@@ -263,7 +264,7 @@
        rx="14.646577" />
     <g
        id="g122"
-       transform="translate(-0.18741388,1.3207815)">
+       transform="translate(0.63901315,-4.862658)">
       <circle
          style="fill:#facf0c;fill-opacity:1;stroke-width:0.264583"
          id="path268"
@@ -317,7 +318,7 @@
     </g>
     <g
        id="g99"
-       transform="translate(-0.18757792,1.3204954)">
+       transform="translate(-189.24522,100.90747)">
       <circle
          style="fill:url(#linearGradient1687);fill-opacity:1;stroke-width:0.264583"
          id="path268-7-4"
