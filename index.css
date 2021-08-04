@@ -7,7 +7,7 @@ a {
 	color: #FA5F5F;
 	display: inline-block;
 	list-style-type: none;
-	cursor: auto;
+	cursor: pointer;
 }
 td {
 	color: #FA5F5F;
@@ -40,6 +40,8 @@ h1 {
 	background-color: #282828;
 	height: 60px;
 	position:relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 img {
 	float: left;
@@ -60,9 +62,10 @@ ul {
 #searchinput {
 	padding-left: 30px;
 	position:absolute;
-	height: 28px;
-	width: 300px;
-	left: 40%;
+	height: 30px;
+	width: 30%;
+	max-width: 300px;
+	right: 0;
 	border-radius: 5px;
 	border: 1px solid;
 	border-color: rgb(49, 49, 49);
@@ -70,36 +73,21 @@ ul {
 	color: rgb(223, 223, 223);
 	top: 50%;
 	transform: translateY(-50%);
-	background-size: 100% 100%;
-	background-size: 16px;
 	background-position: 3%;
+	box-shadow: inset 1px 1px 1px 1px #000;
+	margin-right: 5%;
 }
 #searchinput:hover{
 		background-color: rgb(34, 34, 34);
+		box-shadow: 1px 1px 1px 1px #000;
 	}
 #searchinput:focus{
 		outline: none;
 		background-color: rgb(34, 34, 34);
+		box-shadow: 1px 1px 1px 1px #000;
 	}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #303030;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #151515;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #232323;
-}
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 
 table {
@@ -111,7 +99,6 @@ table {
 	max-width: 1500px;
 	font-family: Arial;
 	border-radius: 10px;
-	min-width: 500px;
 	max-width: 1698px;
 }
 th {
@@ -119,7 +106,6 @@ th {
 	color: rgb(223, 223, 223);
 	padding: 10px;
 	background-color: rgb(27, 27, 27);
-	min-height: 40px;
 	border: none;
 
 }
@@ -132,7 +118,6 @@ td {
 }
 tr {
 	list-style-type: none;
-	min-height: 30px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -143,12 +128,37 @@ tr {
 tr.hoverable:hover {
 	background-color: #1d1d1d;
 }
+td a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+  }
 
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+#icon {
+	width: 5%;
+}
+#name{
+	width: 65%;
+}
+#size{
+	width: 10%;
+	color: rgb(199, 199, 199);
+}
+#date{
+	width: 20%;
+	color: rgb(199, 199, 199);
+}
+
+@media only screen and (max-width: 900px) {
+	.one{
+		display: none;
+	}
+}
+
+.asdf {
+	margin-left: 5%;
 }
